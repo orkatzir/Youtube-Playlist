@@ -1,0 +1,44 @@
+###
+### A complete description of a Prefect Deployment for flow 'parent_flow web to gcs'
+###
+name: etl web to gcs
+description: null
+version: 4c96692a4a76aab80bade3e5aea8a070
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+tags: []
+parameters: {playlist_id_list:["PLJYIzyhJUEpjw6p-8iJS_iDlCbbeE_qb2"]}
+schedule: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: parent_flow web to gcs
+manifest_path: null
+storage: null
+path: C:\Users\Or\Documents\dbt\batch proccesing
+entrypoint: web_to_gcs.py:etl_parent_web_to_gcs
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    playlist_id_list:
+      title: playlist_id_list
+      position: 0
+      type: array
+      items:
+        type: string
+  required:
+  - playlist_id_list
+  definitions: null

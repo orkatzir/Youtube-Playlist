@@ -1,0 +1,12 @@
+
+version: 2
+
+sources:
+  - name: stock
+    database: feisty-oxide-385407  
+    schema: Stock_Project
+    tables:
+      - name: prediction
+        desctiption: 'Sales Averages'
+
+      
