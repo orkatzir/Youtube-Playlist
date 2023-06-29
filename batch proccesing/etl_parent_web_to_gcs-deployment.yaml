@@ -7,7 +7,7 @@ version: 4c96692a4a76aab80bade3e5aea8a070
 # The work queue that will handle this deployment's runs
 work_queue_name: default
 tags: []
-parameters: {}
+parameters: {playlist_id_list:["PLJYIzyhJUEpjw6p-8iJS_iDlCbbeE_qb2"]}
 schedule: null
 infra_overrides: {}
 infrastructure:
