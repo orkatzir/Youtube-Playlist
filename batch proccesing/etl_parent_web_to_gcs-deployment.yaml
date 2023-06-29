@@ -1,13 +1,13 @@
 ###
 ### A complete description of a Prefect Deployment for flow 'parent_flow web to gcs'
 ###
-name: etl web to gcs
+name: etl-web-to-gcs
 description: null
 version: 4c96692a4a76aab80bade3e5aea8a070
 # The work queue that will handle this deployment's runs
 work_queue_name: default
 tags: []
-parameters: {playlist_id_list:["PLJYIzyhJUEpjw6p-8iJS_iDlCbbeE_qb2"]}
+parameters: {}
 schedule: null
 infra_overrides: {}
 infrastructure:
@@ -26,8 +26,17 @@ infrastructure:
 ###
 flow_name: parent_flow web to gcs
 manifest_path: null
-storage: null
-path: C:\Users\Or\Documents\dbt\batch proccesing
+storage:
+  repository: https://github.com/orkatzir/Youtube-Playlist.git
+  reference: null
+  access_token: '**********'
+  include_git_objects: true
+  _block_document_id: 21cf638c-0773-4398-84b2-3652c480b1d7
+  _block_document_name: naya-project-repo
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
 entrypoint: web_to_gcs.py:etl_parent_web_to_gcs
 parameter_openapi_schema:
   title: Parameters

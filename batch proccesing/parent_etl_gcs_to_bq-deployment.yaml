@@ -1,13 +1,13 @@
 ###
 ### A complete description of a Prefect Deployment for flow 'Parent to ETL-TO-BIG-QUERY'
 ###
-name: etl gcs to bigquery
+name: etl-gcs-to-bigquery
 description: null
 version: b0d08219388b0d3b0a7b27e5c56e91ca
 # The work queue that will handle this deployment's runs
 work_queue_name: default
 tags: []
-parameters: {playlist_name_list:['Inside Look At Tech!']}
+parameters: {}
 schedule: null
 infra_overrides: {}
 infrastructure:
@@ -26,8 +26,17 @@ infrastructure:
 ###
 flow_name: Parent to ETL-TO-BIG-QUERY
 manifest_path: null
-storage: null
-path: C:\Users\Or\Documents\dbt\batch proccesing
+storage:
+  repository: https://github.com/orkatzir/Youtube-Playlist.git
+  reference: null
+  access_token: '**********'
+  include_git_objects: true
+  _block_document_id: 21cf638c-0773-4398-84b2-3652c480b1d7
+  _block_document_name: naya-project-repo
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
 entrypoint: gcs_to_bq.py:parent_etl_gcs_to_bq
 parameter_openapi_schema:
   title: Parameters
