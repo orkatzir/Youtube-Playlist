@@ -1,7 +1,7 @@
 ###
 ### A complete description of a Prefect Deployment for flow 'Parent to ETL-TO-BIG-QUERY'
 ###
-name: etl-gcs-to-bigquery
+name: bq_deploy
 description: null
 version: b0d08219388b0d3b0a7b27e5c56e91ca
 # The work queue that will handle this deployment's runs
@@ -37,7 +37,7 @@ storage:
   block_type_slug: github
   _block_type_slug: github
 path: ''
-entrypoint: gcs_to_bq.py:parent_etl_gcs_to_bq
+entrypoint: batch_proccesing\gcs_to_bq.py:parent_etl_gcs_to_bq
 parameter_openapi_schema:
   title: Parameters
   type: object

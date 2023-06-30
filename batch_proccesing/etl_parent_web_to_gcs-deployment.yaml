@@ -1,7 +1,7 @@
 ###
 ### A complete description of a Prefect Deployment for flow 'parent_flow web to gcs'
 ###
-name: etl-web-to-gcs
+name: gcs_deploy
 description: null
 version: 4c96692a4a76aab80bade3e5aea8a070
 # The work queue that will handle this deployment's runs
@@ -37,7 +37,7 @@ storage:
   block_type_slug: github
   _block_type_slug: github
 path: ''
-entrypoint: web_to_gcs.py:etl_parent_web_to_gcs
+entrypoint: batch_proccesing\web_to_gcs.py:etl_parent_web_to_gcs
 parameter_openapi_schema:
   title: Parameters
   type: object
