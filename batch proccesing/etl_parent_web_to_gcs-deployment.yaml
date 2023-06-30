@@ -37,7 +37,7 @@ storage:
   block_type_slug: github
   _block_type_slug: github
 path: ''
-entrypoint: web_to_gcs.py:etl_parent_web_to_gcs
+entrypoint: batch proccesing/web_to_gcs.py:etl_parent_web_to_gcs
 parameter_openapi_schema:
   title: Parameters
   type: object
