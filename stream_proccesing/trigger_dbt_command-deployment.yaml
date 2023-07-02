@@ -1,9 +1,9 @@
 ###
-### A complete description of a Prefect Deployment for flow 'test'
+### A complete description of a Prefect Deployment for flow 'Run DBT Model'
 ###
-name: try
+name: trigger-dbt
 description: null
-version: 76936a4613513533d14fe7a55f20f7d5
+version: 204e606e2fda92f15c043628793f3dc5
 # The work queue that will handle this deployment's runs
 work_queue_name: default
 tags: []
@@ -24,7 +24,7 @@ infrastructure:
 ###
 ### DO NOT EDIT BELOW THIS LINE
 ###
-flow_name: test
+flow_name: Run DBT Model
 manifest_path: null
 storage:
   repository: https://github.com/orkatzir/Youtube-Playlist.git
@@ -37,7 +37,7 @@ storage:
   block_type_slug: github
   _block_type_slug: github
 path: ''
-entrypoint: stream_proccesing\try.py:ma
+entrypoint: stream_proccesing\trigger_dbt.py:trigger_dbt_command
 parameter_openapi_schema:
   title: Parameters
   type: object
