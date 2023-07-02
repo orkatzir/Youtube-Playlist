@@ -2,11 +2,11 @@
 version: 2
 
 sources:
-  - name: stock
+  - name: youtube_live
     database: feisty-oxide-385407  
-    schema: Stock_Project
+    schema: youtube_playlist
     tables:
-      - name: prediction
-        desctiption: 'Sales Averages'
+      - name: youtube_videos
+        desctiption: 'Live Data'
 
       
