@@ -10,6 +10,12 @@ tags: []
 parameters: {}
 schedule: null
 infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: Run DBT Model
+manifest_path: null
 infrastructure:
   type: process
   env: {}
@@ -18,14 +24,11 @@ infrastructure:
   command: null
   stream_output: true
   working_dir: null
+  _block_document_id: 42d7ad2d-4a08-48b9-83b4-f51ecb98ac4a
+  _block_document_name: anonymous-56fdcd05-2fdb-4944-8f18-31ce651a73e7
+  _is_anonymous: true
   block_type_slug: process
   _block_type_slug: process
-
-###
-### DO NOT EDIT BELOW THIS LINE
-###
-flow_name: Run DBT Model
-manifest_path: null
 storage:
   repository: https://github.com/orkatzir/Youtube-Playlist.git
   reference: null
