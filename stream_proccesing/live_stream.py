@@ -1,7 +1,7 @@
 from youtube_watcher import main
 from prefect import flow,task
 
-@flow(name="Stream live to big query table")
+@flow(name="Stream live")
 def live_stream_run():
     main()
     
