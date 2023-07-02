@@ -37,7 +37,7 @@ storage:
   block_type_slug: github
   _block_type_slug: github
 path: ''
-entrypoint: try.py:ma
+entrypoint: stream_proccesing\try.py:ma
 parameter_openapi_schema:
   title: Parameters
   type: object
