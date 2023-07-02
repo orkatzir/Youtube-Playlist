@@ -7,7 +7,7 @@ version: b0d08219388b0d3b0a7b27e5c56e91ca
 # The work queue that will handle this deployment's runs
 work_queue_name: default
 tags: []
-parameters: {playlist_name_list:['Inside Look At Tech!']}
+parameters: {playlist_name_list:['First Impressions!']}
 schedule: null
 infra_overrides: {}
 infrastructure:

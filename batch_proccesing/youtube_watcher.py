@@ -3,7 +3,8 @@ import logging
 import requests
 import pandas as pd
 import time
-from config_file import config
+# from config_file import config
+from prefect.blocks.system import JSON
 from pprint import pformat
 import json
 
@@ -99,7 +100,7 @@ def on_delivery(err,record):
 def main(youtube_playlist_id):
     logging.info("START")
 
-    google_api_key = config["google_api_key"]
+    google_api_key = JSON.load("google-api-key").value['google_api_key']
 
     playlist_first_page = fetch_playlist_items_page(google_api_key,youtube_playlist_id, page_token=None)
     playlist_name = fetch_playlist_name(google_api_key,youtube_playlist_id, page_token=None)
